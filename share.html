@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#222824">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="share.css">
+  <title>即時位置分享 · PACE</title>
+</head>
+<body class="share-page">
+  <header class="share-header">
+    <a class="brand" href="index.html"><span class="brand-symbol">//</span>PACE</a>
+    <span>即時位置分享</span>
+  </header>
+  <main class="share-main">
+    <section class="share-card">
+      <div class="share-card-head">
+        <div>
+          <span class="overline">LIVE LOCATION</span>
+          <h1>分享者的位置</h1>
+        </div>
+        <span id="connectionStatus" class="share-status" role="status" aria-live="polite">正在連線…</span>
+      </div>
+      <p id="shareMessage" class="share-message">正在連接即時位置服務。</p>
+      <div id="shareMap" aria-label="分享者即時位置地圖"></div>
+      <p id="coordinateFallback" class="share-fallback-coordinates" hidden></p>
+      <div class="share-meta">
+        <span id="updatedAt">尚未收到定位</span>
+        <span id="accuracy"></span>
+      </div>
+      <p class="share-privacy">這個連結只顯示分享期間的最新位置，不含運動軌跡。連結最多一小時有效；分享者可隨時停止。</p>
+      <a class="share-home" href="index.html">開啟 PACE 運動頁面 →</a>
+    </section>
+  </main>
+  <script src="vendor/leaflet.js"></script>
+  <script src="tiles.js"></script>
+  <script src="share-config.js"></script>
+  <script src="share.js"></script>
+</body>
+</html>
