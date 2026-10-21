@@ -5,7 +5,7 @@
   "compatibility_date": "2026-10-21",
   "workers_dev": true,
   "vars": {
-    "ALLOWED_ORIGINS": "http://localhost:8000,http://127.0.0.1:8000,https://YOUR_ACCOUNT.github.io"
+    "ALLOWED_ORIGINS": "http://localhost:8000,http://127.0.0.1:8000,https://klhu408.github.io"
   },
   "durable_objects": {
     "bindings": [
